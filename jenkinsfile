@@ -21,14 +21,10 @@ pipeline {
             }
         }
 
-        stage('Deploy to prod') {
+        stage('Deploy to prod') {  // This should be outside "Test"
             steps {
                 echo "Deploying my final webapp to production"
             }
-        }
-    }
-}
-
         }
     }
 }
